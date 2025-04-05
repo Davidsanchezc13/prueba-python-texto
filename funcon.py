@@ -43,7 +43,7 @@ def procesar_texto(texto):
 
 
 
-  return f"nwords: {totalw}\nunique_words: {unique}\nlongest_word: {selectedword}\nnumber of matches:\n{nwordsoutput}"
+  return {"nwords": totalw,"unique_words": unique,"longest_word": selectedword,"number of matches":nwordsoutput}
   #obtengo los argumentos dados por el usuario y proceso el texto
 
 args=parser.parse_args()
